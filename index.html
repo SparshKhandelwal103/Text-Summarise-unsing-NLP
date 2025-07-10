@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Summarize</h1>
+          <p class="lead">Summarize some text</p>
+        </div>
+      </div>
+
+      <form action="/summary" method="POST">
+        <textarea
+            name='rawtext'
+            class = 'form-control'
+            rows="'3"
+            placeholder="Enter text to summarize here"
+            ></textarea>
+        <button class="btn btn-primary" type="submit" name="submit_button" value='basic_summary'>Basic Summary</button>
+        <button class="btn btn-primary" type="submit" name="submit_button" value="'NLP_summary">NLP Summary</button>
+      </form>
+</body>
+</html>
